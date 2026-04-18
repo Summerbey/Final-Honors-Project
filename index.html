@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RareTech - Premium Tech Accessories</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS (minimal) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary fs-4" href="index.html">TechStore</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex ms-lg-3 gap-2">
+                    <a href="#search" class="btn btn-outline-secondary rounded-circle" aria-label="Search">
+                        <i class="bi bi-search"></i>
+                    </a>
+                    <a href="cart.html" class="btn btn-outline-secondary rounded-circle position-relative" aria-label="Shopping cart">
+                        <i class="bi bi-cart3"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            2
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white text-center py-5">
+        <div class="container py-5">
+            <h1 class="display-3 fw-bold mb-3">Premium Tech Accessories</h1>
+            <p class="lead fs-4 mb-4">Elevate your digital lifestyle</p>
+            <a href="products.html" class="btn btn-primary btn-lg px-5">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Featured Products</h2>
+            
+            <div class="row g-4">
+                <!-- Product Card 1 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm product-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&h=400&fit=crop" 
+                                 class="card-img-top" alt="Wireless Earbuds">
+                            <span class="badge bg-success position-absolute top-0 end-0 m-3">New</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Wireless Earbuds Pro</h5>
+                            <p class="card-text text-muted small">Premium audio experience</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fs-4 fw-bold text-primary">£89.99</span>
+                                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm product-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=400&h=400&fit=crop" 
+                                 class="card-img-top" alt="Smart Watch">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-3">Sale</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Smart Watch Ultra</h5>
+                            <p class="card-text text-muted small">Advanced fitness tracking</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fs-4 fw-bold text-primary">£299.99</span>
+                                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm product-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop" 
+                                 class="card-img-top" alt="Phone Case">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Premium Phone Case</h5>
+                            <p class="card-text text-muted small">Military-grade protection</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fs-4 fw-bold text-primary">£24.99</span>
+                                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm product-card">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1625948515291-69613efd103f?w=400&h=400&fit=crop" 
+                                 class="card-img-top" alt="USB-C Cable">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">USB-C Cable 2M</h5>
+                            <p class="card-text text-muted small">Fast charging & data</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fs-4 fw-bold text-primary">£14.99</span>
+                                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="fw-bold mb-3">Stay Updated</h2>
+                    <p class="text-muted mb-4">Subscribe to our newsletter for exclusive deals and product launches</p>
+                    
+                    <form class="row g-2">
+                        <div class="col-12 col-md-8">
+                            <input type="email" class="form-control form-control-lg" placeholder="Enter your email" required>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Column 1 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3 class="fw-bold text-primary mb-3">RareTech</h3>
+                    <p class="text-white-50">Premium tech accessories for the modern lifestyle.</p>
+                </div>
+                
+                <!-- Column 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-semibold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="products.html" class="text-white-50 text-decoration-none">Products</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white-50 text-decoration-none">Contact</a></li>
+                        <li class="mb-2"><a href="#faq" class="text-white-50 text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-semibold mb-3">Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#shipping" class="text-white-50 text-decoration-none">Shipping Info</a></li>
+                        <li class="mb-2"><a href="#returns" class="text-white-50 text-decoration-none">Returns</a></li>
+                        <li class="mb-2"><a href="#warranty" class="text-white-50 text-decoration-none">Warranty</a></li>
+                        <li class="mb-2"><a href="#support" class="text-white-50 text-decoration-none">Support</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h5 class="fw-semibold mb-3">Follow Us</h5>
+                    <div class="d-flex gap-2">
+                        <a href="#facebook" class="btn btn-outline-light rounded-circle" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#twitter" class="btn btn-outline-light rounded-circle" aria-label="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#instagram" class="btn btn-outline-light rounded-circle" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <div class="text-center text-white-50">
+                <p class="mb-0">&copy; 2025 RareTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS (minimal) -->
+    <script src="script.js"></script>
+</body>
+</html>

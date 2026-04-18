@@ -1,0 +1,81 @@
+/* ===================================
+   MINIMAL CUSTOM CSS FOR BOOTSTRAP
+   Bootstrap handles 95% of styling!
+   =================================== */
+
+/* Hero Section - Custom Gradient */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+/* Product Card Hover Effect */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-card img {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.product-card .card-img-top {
+    aspect-ratio: 1;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* Smooth transitions for buttons */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Social icon buttons */
+.btn-outline-light.rounded-circle {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 400px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* That's it! Bootstrap handles everything else:
+   - Navigation (navbar component)
+   - Grid system (container, row, col)
+   - Cards (card component)
+   - Buttons (btn classes)
+   - Forms (form-control)
+   - Footer layout (row, col)
+   - Spacing (mt, mb, py, px utilities)
+   - Colors (bg-*, text-*)
+   - Responsive utilities (d-flex, col-lg-3, etc.)
+   
+   Total custom CSS: ~80 lines
+   Compare to vanilla: ~550 lines!
+*/
