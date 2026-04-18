@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RareTech - Premium Tech Accessories</title>
+    
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS (minimal) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar is-white" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item has-text-link has-text-weight-bold is-size-4" href="index.html">
+                    TechStore
+                </a>
+                
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id="navbarBurger">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="index.html" class="navbar-item is-active">
+                        Home
+                    </a>
+                    <a href="products.html" class="navbar-item">
+                        Products
+                    </a>
+                    <a href="#about" class="navbar-item">
+                        About
+                    </a>
+                    <a href="#contact" class="navbar-item">
+                        Contact
+                    </a>
+                    
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <button class="button is-white">
+                                <span class="icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </button>
+                            <a href="cart.html" class="button is-white">
+                                <span class="icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                <span class="tag is-danger is-rounded">2</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero is-medium hero-gradient">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1 is-size-3-mobile has-text-white">
+                    Premium Tech Accessories
+                </h1>
+                <p class="subtitle is-4 is-size-5-mobile has-text-white">
+                    Elevate your digital lifestyle
+                </p>
+                <a href="products.html" class="button is-link is-large">
+                    <strong>Shop Now</strong>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered mb-6">Featured Products</h2>
+            
+            <div class="columns is-multiline">
+                <!-- Product Card 1 -->
+                <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="card product-card">
+                        <div class="card-image">
+                            <figure class="image is-square">
+                                <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&h=400&fit=crop" alt="Wireless Earbuds">
+                            </figure>
+                            <span class="tag is-success is-medium product-badge">New</span>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-5">Wireless Earbuds Pro</p>
+                            <p class="subtitle is-6 has-text-grey">Premium audio experience</p>
+                            
+                            <div class="level is-mobile mt-4">
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <p class="title is-4 has-text-link">£89.99</p>
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <button class="button is-link is-small">
+                                            <strong>Add to Cart</strong>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="card product-card">
+                        <div class="card-image">
+                            <figure class="image is-square">
+                                <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=400&h=400&fit=crop" alt="Smart Watch">
+                            </figure>
+                            <span class="tag is-danger is-medium product-badge">Sale</span>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-5">Smart Watch Ultra</p>
+                            <p class="subtitle is-6 has-text-grey">Advanced fitness tracking</p>
+                            
+                            <div class="level is-mobile mt-4">
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <p class="title is-4 has-text-link">£299.99</p>
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <button class="button is-link is-small">
+                                            <strong>Add to Cart</strong>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="card product-card">
+                        <div class="card-image">
+                            <figure class="image is-square">
+                                <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop" alt="Phone Case">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-5">Premium Phone Case</p>
+                            <p class="subtitle is-6 has-text-grey">Military-grade protection</p>
+                            
+                            <div class="level is-mobile mt-4">
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <p class="title is-4 has-text-link">£24.99</p>
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <button class="button is-link is-small">
+                                            <strong>Add to Cart</strong>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="card product-card">
+                        <div class="card-image">
+                            <figure class="image is-square">
+                                <img src="https://images.unsplash.com/photo-1625948515291-69613efd103f?w=400&h=400&fit=crop" alt="USB-C Cable">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-5">USB-C Cable 2M</p>
+                            <p class="subtitle is-6 has-text-grey">Fast charging & data</p>
+                            
+                            <div class="level is-mobile mt-4">
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <p class="title is-4 has-text-link">£14.99</p>
+                                    </div>
+                                </div>
+                                <div class="level-right">
+                                    <div class="level-item">
+                                        <button class="button is-link is-small">
+                                            <strong>Add to Cart</strong>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section has-background-light">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-half has-text-centered">
+                    <h2 class="title is-3">Stay Updated</h2>
+                    <p class="subtitle is-5 has-text-grey">
+                        Subscribe to our newsletter for exclusive deals and product launches
+                    </p>
+                    
+                    <form class="field has-addons has-addons-centered mt-5">
+                        <div class="control is-expanded">
+                            <input class="input is-medium" type="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="control">
+                            <button type="submit" class="button is-link is-medium">
+                                <strong>Subscribe</strong>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer has-background-dark has-text-white">
+        <div class="container">
+            <div class="columns">
+                <!-- Column 1 -->
+                <div class="column is-3">
+                    <h3 class="title is-4 has-text-link">RareTech</h3>
+                    <p class="has-text-grey-light">
+                        Premium tech accessories for the modern lifestyle.
+                    </p>
+                </div>
+                
+                <!-- Column 2 -->
+                <div class="column is-3">
+                    <h4 class="title is-5 has-text-white">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html" class="has-text-grey-light">Products</a></li>
+                        <li><a href="#about" class="has-text-grey-light">About Us</a></li>
+                        <li><a href="#contact" class="has-text-grey-light">Contact</a></li>
+                        <li><a href="#faq" class="has-text-grey-light">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div class="column is-3">
+                    <h4 class="title is-5 has-text-white">Customer Service</h4>
+                    <ul class="footer-links">
+                        <li><a href="#shipping" class="has-text-grey-light">Shipping Info</a></li>
+                        <li><a href="#returns" class="has-text-grey-light">Returns</a></li>
+                        <li><a href="#warranty" class="has-text-grey-light">Warranty</a></li>
+                        <li><a href="#support" class="has-text-grey-light">Support</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div class="column is-3">
+                    <h4 class="title is-5 has-text-white">Follow Us</h4>
+                    <div class="buttons">
+                        <a href="#facebook" class="button is-dark is-rounded">
+                            <span class="icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </span>
+                        </a>
+                        <a href="#twitter" class="button is-dark is-rounded">
+                            <span class="icon">
+                                <i class="fab fa-twitter"></i>
+                            </span>
+                        </a>
+                        <a href="#instagram" class="button is-dark is-rounded">
+                            <span class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="has-background-grey">
+            
+            <div class="content has-text-centered has-text-grey-light">
+                <p>&copy; 2025 RareTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

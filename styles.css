@@ -1,0 +1,92 @@
+/* ===================================
+   MINIMAL CUSTOM CSS FOR BULMA
+   Bulma handles almost everything!
+   =================================== */
+
+/* Hero Gradient Background */
+.hero-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Product Card Hover Effects */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.product-card .card-image img {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.product-card .card-image {
+    overflow: hidden;
+}
+
+/* Product Badge Positioning */
+.product-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1;
+}
+
+/* Footer Links Styling */
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a:hover {
+    color: #3273dc !important;
+}
+
+/* Navbar shadow on scroll */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sticky navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+}
+
+/* Button transitions */
+.button {
+    transition: transform 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+/* 
+COMPARISON NOTE:
+Bulma provides:
+- Component classes (.card, .navbar, .hero)
+- Modifier classes (is-link, is-large, has-text-centered)
+- Column system (.columns, .column, is-half)
+- No JavaScript (unlike Bootstrap)
+- Semantic naming (is-, has-)
+- Pure CSS/Flexbox
+
+Total custom CSS: ~70 lines
+Compare to:
+- Vanilla: ~550 lines
+- Bootstrap: ~80 lines
+- Tailwind: ~30 lines (but verbose HTML)
+*/
